@@ -1,0 +1,131 @@
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main {
+  background-color: rgba(17, 17, 17, 0.795);
+  color: white;
+  width: 700px;
+  height: 700px;
+  padding: 10px;
+}
+h1 span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.616);
+  font-weight: 300;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  margin: 10px 50px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(77, 76, 76, 25%);
+}
+.head {
+  background-color: purple;
+}
+#snake-area {
+  height: 575px;
+  width: 575px;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.board-element {
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 3px;
+}
+.snake {
+  background-color: rgb(255, 208, 0);
+  border-color: rgb(114, 106, 1);
+}
+.food {
+  background-color: blue;
+}
+.hack-start-button {
+  width: 700px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #262626;
+}
+.hack-start-button:hover {
+  background-color: #077d3a;
+  transition: all 0.2s;
+}
+.inactive {
+  display: none;
+}
+
+#progress {
+  width: 100%;
+  border-radius: 5px;
+  height: 4px;
+  background-color: #222;
+  position: relative;
+  top: 660px;
+}
+
+#loading-bar,
+#result-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #10ffcd;
+  border-radius: 5px;
+}
+#result-progress {
+  width: 100%;
+  border-radius: 5px;
+  height: 4px;
+  background-color: #222;
+  position: relative;
+  top: 370px;
+}
+#lresult-bar,
+#wresult-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #10ffcd;
+  border-radius: 5px;
+}
+.loading-text {
+  position: relative;
+  top: 300px;
+  text-align: center;
+}
+.loading-text h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.loading-text span {
+  font-size: 11px;
+  color: rgba(139, 139, 139, 0.781);
+}
+#hack-loose,
+#hack-win {
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  top: 300px;
+}
